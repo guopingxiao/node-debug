@@ -1,0 +1,37 @@
+{
+  "name": "node-debug",
+  "version": "1.0.0",
+  "description": "this is a node-debug project",
+  "main": "app.ts",
+  "scripts": {
+    "inspect": "node --inspect-brk -r ts-node/register src/inspect/inspect.ts",
+    "watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guopingxiao/node-debug.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "debug"
+  ],
+  "author": "xiaoguoping",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guopingxiao/node-debug/issues"
+  },
+  "homepage": "https://github.com/guopingxiao/node-debug#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "nodemon": "^1.19.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
