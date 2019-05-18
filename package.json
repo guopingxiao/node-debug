@@ -24,12 +24,21 @@
   },
   "homepage": "https://github.com/guopingxiao/node-debug#readme",
   "dependencies": {
+    "bluebird": "^3.5.4",
     "koa": "^2.7.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "paloma": "^1.2.5",
+    "v8-profiler": "^5.7.0"
   },
   "devDependencies": {
     "@types/koa": "^2.0.48",
     "@types/koa-router": "^7.0.40",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
     "nodemon": "^1.19.0",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5"
