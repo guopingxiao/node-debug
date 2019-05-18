@@ -6,6 +6,7 @@
   "scripts": {
     "inspect": "node --inspect-brk -r ts-node/register src/inspect/inspect.ts",
     "watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts",
+    "build": "rm -rf dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
