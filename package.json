@@ -26,9 +26,11 @@
   "homepage": "https://github.com/guopingxiao/node-debug#readme",
   "dependencies": {
     "bluebird": "^3.5.4",
+    "debug": "^4.1.1",
     "koa": "^2.7.0",
     "koa-router": "^7.4.0",
     "paloma": "^1.2.5",
+    "source-map-support": "^0.5.12",
     "v8-profiler": "^5.7.0"
   },
   "devDependencies": {
