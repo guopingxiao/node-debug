@@ -9,6 +9,6 @@ ulimit -c unlimited
 ulimit -c
 cd $GCORE_DIR
 
-node --abort-on-uncaught-exception ${JS_PATH}
+node --abort-on-uncaught-exception $JS_PATH
 
 
