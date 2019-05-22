@@ -1,6 +1,7 @@
-function compute (a, b) {
+function toTask (a, b) {
   return a + b
 }
 
-let result = compute(2, 3)
-console.log(result)
+let result = toTask(2, 3)
+
+console.log(`代码执行完毕，结果为:`, result)

@@ -10,9 +10,6 @@
       "name": "1. Launch Mode",
       "program": "${workspaceFolder}/app/debug/vscode.js",
       "console":"integratedTerminal",
-      "outFiles": [
-        "${workspaceFolder}/**/*.js"
-      ]
     },
     {
       "type": "node",
@@ -30,9 +27,6 @@
       "skipFiles": [
         "${workspaceFolder}/node_modules/**/*.js",
         "<node_internals>/**/*.js"
-      ],
-      "outFiles": [
-        "${workspaceFolder}/**/*.js"
       ]
     },
     {
@@ -42,11 +36,31 @@
       "runtimeExecutable": "nodemon",
       "program": "${workspaceFolder}/app/debug/vscode.js",
       "restart": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "5.debug gulp",
+      "program": "${workspaceFolder}/node_modules/gulp/bin/gulp.js",
       "console": "integratedTerminal",
-      "skipFiles": [
-          "${workspaceFolder}/node_modules/**/*.js",
-          "<node_internals>/**/*.js"
-      ]
-  }
+      "args": [
+        "compileTs"  
+      ],
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "6. Launch via NPM",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+          "run-script", "build-mmp"
+      ],
+      "env":{
+        "MODE":"dev"
+      }
+    }
   ]
 }

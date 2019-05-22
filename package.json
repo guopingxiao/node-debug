@@ -4,6 +4,7 @@
   "description": "this is a node-debug project",
   "main": "app.ts",
   "scripts": {
+    "build-mmp": "export MINA='mmp' && node bin/build.js",
     "inspect": "node --inspect-brk -r ts-node/register src/inspect/inspect.ts",
     "watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts",
     "build": "rm -rf dist && tsc",
@@ -35,6 +36,7 @@
     "v8-profiler": "^5.7.0"
   },
   "devDependencies": {
+    "@dp/dependency-analyzer": "^2.0.3",
     "@types/koa": "^2.0.48",
     "@types/koa-router": "^7.0.40",
     "eslint": "^5.16.0",
@@ -43,7 +45,9 @@
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.2",
     "nodemon": "^1.19.0",
+    "shelljs": "^0.8.3",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5"
   }

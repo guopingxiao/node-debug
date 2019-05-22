@@ -9,7 +9,7 @@ app.use(async (ctx, next) => {
 
   await next()
   let result = plus(3, 3)
-  console.log(result)
+  console.log(`执行结果为：`, result)
 })
 
 router.get('*', async ctx => {
