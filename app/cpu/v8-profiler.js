@@ -23,7 +23,7 @@ router.get('/cpuprofile', async ctx => {
 
   const profile = profiler.stopProfiling()
   profile.export()
-    .pipe(fs.createWriteStream(`./app/result/v8-profiler-${Date.now()}.cpuprofile`))
+    .pipe(fs.createWriteStream(`./app/static/v8-profiler.cpuprofile`))
     .on('finish', () => profile.delete())
   ctx.status = 204
 })
@@ -31,3 +31,6 @@ router.get('/cpuprofile', async ctx => {
 app.use(router.routes())
 app.listen(3000)
 console.log(`v8 listening on port 3000`)
+
+// curl localhost:3000/cpuprofile
+// ab -c 20 -n 2000 "localhost:3000/encrypt?password=123456"

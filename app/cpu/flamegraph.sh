@@ -1,7 +1,7 @@
 #!/bin/bash
 
-V8_RESULT_DIR=/Users/xiaopingguo/repos/my_repos/node-debug/app/result
-PROFILE_FILE=/Users/xiaopingguo/repos/my_repos/node-debug/app/result/v8-profiler.cpuprofile
+V8_RESULT_DIR=/Users/xiaopingguo/repos/my_repos/node-debug/app/static
+PROFILE_FILE=/Users/xiaopingguo/repos/my_repos/node-debug/app/static/v8-profiler.cpuprofile
 
 cd ${V8_RESULT_DIR}
 
