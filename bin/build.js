@@ -18,7 +18,8 @@ try {
   })
 
   // 开始分析
-  Analyzer.analysis()
+  cleanDist()
+  // Analyzer.analysis()
 } catch (e) {
   cleanDist()
   console.log(`Analyzer error`, e)

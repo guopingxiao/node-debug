@@ -56,11 +56,13 @@
       "cwd": "${workspaceRoot}",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
-          "run-script", "build-mmp"
+        "run-script",
+        "build-mmp"
       ],
       "env":{
         "MODE":"dev"
-      }
+      },
+      "port": 9229
     }
   ]
 }

@@ -8,7 +8,7 @@ app.use(async (ctx, next) => {
   console.log('Vscode: ', ctx.url)
 
   await next()
-  let result = plus(3, 3)
+  let result = plus(4, 3)
   console.log(`执行结果为：`, result)
 })
 

@@ -4,7 +4,7 @@
   "description": "this is a node-debug project",
   "main": "app.ts",
   "scripts": {
-    "build-mmp": "export MINA='mmp' && node bin/build.js",
+    "build-mmp": "export MINA='mmp' && node --inspect-brk bin/build.js ",
     "inspect": "node --inspect-brk -r ts-node/register src/inspect/inspect.ts",
     "watch": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts",
     "build": "rm -rf dist && tsc",

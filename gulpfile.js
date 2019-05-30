@@ -5,7 +5,7 @@ const cwd = process.cwd()
 const tsConfig = require('./tsconfig.json')
 
 // 进行gulp脚本编译
-gulp.task('compileTs', (next) => {
+gulp.task('compileTs', gulp.parallel((next) => {
   let configPath = path.join(cwd, `tsconfig.json`)
   if (fs.existsSync(configPath)) {
     try {
@@ -25,4 +25,6 @@ gulp.task('compileTs', (next) => {
   } else {
     next()
   }
-})
+}))
+
+gulp.task('default', gulp.series('compileTs'))
