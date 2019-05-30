@@ -18,3 +18,6 @@ setInterval(function testMemoryLeak () {
     }
   }
 }, 1000)
+
+// node app
+// kill -USR2 `pgrep -n node`
