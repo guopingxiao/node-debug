@@ -1,3 +1,5 @@
+// 由于闭包引起的内存泄漏
+
 const heapdump = require('heapdump')
 
 let leakObject = null
